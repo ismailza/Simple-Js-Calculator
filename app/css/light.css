@@ -1,0 +1,8 @@
+
+.wrapper {
+  background-color: rgb(7, 210, 199);
+}
+.row input, .row button {
+  color: rgb(87, 87, 87);
+  background-color: rgb(255, 255, 255);
+}

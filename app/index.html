@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Simple Js Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" id="theme" href="">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Simple Js Calculator</h1>
+      <button onclick="changeTheme()" class="theme-button">
+        <img src="" alt="Theme Icon" height="19" width="19" id="theme-icon">
+      </button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <input type="text" id="output" value="0" placeholder="Result" readonly>
+      </div>
+      <div class="row">
+        <button onclick="write_expression('7')">7</button>
+        <button onclick="write_expression('8')">8</button>
+        <button onclick="write_expression('9')">9</button>
+        <button class="custom-button" id="clear-button" onclick="clear_all()">C</button>
+        <button class="custom-button" id="delete-button" onclick="cancel_entry()">CE</button>
+      </div>
+      <div class="row">
+        <button onclick="write_expression('4')">4</button>
+        <button onclick="write_expression('5')">5</button>
+        <button onclick="write_expression('6')">6</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+      </div>
+      <div class="row">
+        <button onclick="write_expression('1')">1</button>
+        <button onclick="write_expression('2')">2</button>
+        <button onclick="write_expression('3')">3</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+      </div>
+      <div class="row">
+        <button onclick="change_sign()">+/-</button>
+        <button onclick="write_expression('0')">0</button>
+        <button onclick="add_dot()">.</button>
+        <button class="custom-button" id="equal-button" onclick="calculate('=')">=</button>
+      </div> 
+    </div>
+  </div>
+  <script src="js/calculator.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
